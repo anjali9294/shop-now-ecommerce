@@ -1,0 +1,16 @@
+footer {
+  padding: 2vmax;
+  background-color: rgb(34, 33, 33);
+  color: white;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
+  position: relative;
+
+  bottom: 0px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  /* top: 0; */
+}
