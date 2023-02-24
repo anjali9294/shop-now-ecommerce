@@ -1,0 +1,20 @@
+version: 1
+routes:
+  - src: /.*
+    dest: /backend/server.js
+build:
+  env:
+    NODE_ENV: production
+  commands:
+    - npm install
+    - npm run build
+  plugins:
+    - name: "@railway/static"
+      env:
+        PUBLIC_DIR: "frontend/build"
+services:
+  backend:
+    commands:
+      - npm start
+    env:
+      PORT: 3000
